@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -euo pipefail
+
 THE_RAND=$(echo -n $RANDOM)
 
 mv ${TARGET} ${TARGET}_$THE_RAND
