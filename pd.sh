@@ -9,7 +9,7 @@ git checkout deploy
 git config --global user.email $EMAIL
 git config --global user.name "Build service"
 date > generated
-rm -r $TARGET
+rm -fr $TARGET
 mv ${TARGET}_$THE_RAND $TARGET
 git add generated $TARGET
 git commit -m 'new release'
